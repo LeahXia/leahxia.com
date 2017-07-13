@@ -1,0 +1,101 @@
+/* Layout */
+.main {
+    display: flex;
+    padding: 2em;
+    height: 70vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: middle;
+}
+
+.clockbox,
+#clock {
+    width: 100%;
+}
+
+/* Clock styles */
+.circle {
+    fill: none;
+    stroke: #000;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+
+.mid-circle {
+    fill: #000;
+}
+.hour-marks {
+    fill: none;
+    stroke: #000;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+
+.hour-arm {
+    fill: none;
+    stroke: #000;
+    stroke-width: 17;
+    stroke-miterlimit: 10;
+}
+
+.minute-arm {
+    fill: none;
+    stroke: #000;
+    stroke-width: 11;
+    stroke-miterlimit: 10;
+}
+
+.second-arm {
+    fill: none;
+    stroke: #000;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+}
+
+/* Transparent box ensuring arms center properly. */
+.sizing-box {
+    fill: none;
+}
+
+/* Make all arms rotate around the same center point. */
+/* Optional: Use transition for animation. */
+#hour,
+#minute,
+#second {
+    transform-origin: 300px 300px;
+    /*transition: transform .5s ease-in-out;*/
+}
+
+.textbox{
+  flex:1;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+
+  height:auto;
+  width:100%;
+
+}
+
+.textbox p{
+  background:#000;
+  color:#fff;
+  font-size:4em;
+  font-weight:600;
+  letter-spacing: 0.05em;
+  padding: 10px 30px;
+  margin:0;
+}
+
+.clockbox{
+  flex:5;
+}
+
+@media (max-width:500px){
+  .textbox p{
+    letter-spacing: 0.01em;
+    padding: 10px 30px;
+    font-size:2em;
+    font-weight:600;
+  }
+}

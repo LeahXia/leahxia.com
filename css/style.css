@@ -1,0 +1,236 @@
+
+/* GLOBAL */
+*, *:before, *:after{
+  box-sizing: border-box;
+}
+
+body
+{
+  background-color: rgba(21,35,146,0.5);
+  background-image: linear-gradient(to bottom, rgba(20, 9, 41,0.9),rgba(20, 9, 41,0.9)), url("../img/coding-screen.JPG");
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+  background-position: top left;
+  background-attachment: fixed;
+  font-family:myParagraph,serif;
+  color:#fff;
+}
+
+
+p
+{
+        margin:5px 0;
+        line-height:25px;
+}
+
+a
+{
+        text-decoration:none;
+        color:inherit;
+        transition: color .5s ease;
+}
+
+strong
+{
+        font-weight:bold;
+}
+
+
+
+@font-face {
+  font-family: myHeading;
+  src:url("../font/30A65A_1_0.woff");
+}
+
+@font-face {
+  font-family: myParagraph;
+  src:url("../font/30A65A_2_0.woff");
+}
+
+
+/*CONTAINER*/
+.container, .about-me{
+  width:85%;
+  max-width: 1000px;
+  height:auto;
+  margin: 0 auto;
+}
+
+
+/* HEADER */
+
+.name{
+  width:100%;
+  max-width:900px;
+  margin: 0 auto 60px;
+}
+
+.name h1{
+  margin:18% auto 38px;
+  font-size:95px;
+  color:#fff;
+  font-family: myHeading, serif;
+  text-align:center;
+  letter-spacing: 4px;
+  text-shadow: 4px 4px 10px black;
+}
+
+.name p{
+  font-family: myParagraph, serif;
+  font-size:64px;
+  color: #6BCBEE;
+  text-align:center;
+  letter-spacing: 0.15em;
+  text-shadow: 4px 4px 10px black;
+  margin-bottom: 30px;
+}
+
+/*PORTFOLIO*/
+.portfolio-list{
+  width:100%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio-list .site-img{
+  flex-basis:31%;
+  margin: 2% 1% 0;
+  position: relative;
+
+}
+
+.portfolio-list img{
+  width:100%;
+  height:auto;
+}
+
+
+.portfolio-list .caption{
+  width:100%;
+  height:28%;
+  position: absolute;
+  bottom:0;
+}
+
+.hide{
+  display:none;
+}
+
+h5{
+  color:#fff;
+  font-size:24px;
+  font-family:myHeading,serif;
+  text-align: center;
+  padding-top: 2%;
+}
+
+.portfolio-list p{
+  color:#fff;
+  font-size:16px;
+  text-align: center;
+}
+
+
+#spiruvive .caption{
+  background: rgba(54, 116, 23,0.8);
+}
+
+#create-design .caption{
+  background: rgba(219, 151, 47,0.8);
+}
+
+#the-next-web .caption{
+  background: rgba(0, 69, 111,0.8);
+}
+
+#youtube .caption{
+  background: rgba(233, 86, 40,0.8);
+}
+
+#apple .caption{
+  background: rgba(23, 154, 220,0.8);
+}
+
+#google-hp .caption{
+  background: rgba(4, 162, 134,0.8);
+}
+
+#google-sp .caption{
+  background: rgba(111, 156, 217,0.8);
+}
+
+#tribute .caption{
+  background: rgba(155, 32, 114,0.8);
+}
+
+#calculator .caption{
+  background: rgba(214, 56, 63,0.8);
+}
+
+#color-grids .caption{
+  background: rgba(0, 69, 111,0.8);
+}
+
+#clock .caption{
+  background: rgba(54, 116, 23,0.8);
+}
+
+#android .caption{
+  background: rgba(219, 151, 47,0.85);
+}
+
+/*CONTACT*/
+.contact{
+  margin:50px auto;
+  display: flex;
+  flex-direction: column;
+}
+.contact button{
+  background: #81d4f1;
+  width:200px;
+  height:50px;
+  border:1px solid #81d4f1;
+  border-radius: 2px;
+  font-family:myHeading,serif;
+  font-size:16px;
+  align-self: center;
+  margin:30px auto;
+}
+
+
+/*FOOTER*/
+footer{
+  background: rgba(100, 107, 163,0.7);
+}
+
+footer p{
+  color:white;
+  font-size: 28px;
+  padding-top:80px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.copyright{
+  margin-top: 50px;
+  background: rgba(80, 87, 143,0.7);
+}
+
+.copyright p{
+  padding-top:20px;
+  padding-bottom:15px;
+  font-size: 19px;
+}
+
+@media (max-width:768px){
+  .portfolio-list .site-img{
+    flex-basis:45%;
+  }
+}
+
+@media (max-width:500px){
+  .portfolio-list .site-img{
+    flex-basis:100%;
+  }
+}
